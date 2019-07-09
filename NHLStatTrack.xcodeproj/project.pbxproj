@@ -1,0 +1,939 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37B1DA172071A75300DB71A4 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1DA162071A75300DB71A4 /* JSONParser.swift */; };
+		DF071E4E2070683D00A0A8B3 /* TeamStatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF071E4D2070683D00A0A8B3 /* TeamStatController.swift */; };
+		DF0C78B9206AC1B200FC9B86 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0C78B8206AC1B200FC9B86 /* SWRevealViewController.m */; };
+		DF0C78BD206AC46500FC9B86 /* StandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0C78BC206AC46500FC9B86 /* StandingController.swift */; };
+		DF30F8A22069686B0047B97C /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = DF30F89E2069686A0047B97C /* calendar.png */; };
+		DF30F8A32069686B0047B97C /* live.png in Resources */ = {isa = PBXBuildFile; fileRef = DF30F89F2069686B0047B97C /* live.png */; };
+		DF30F8A42069686B0047B97C /* cup.png in Resources */ = {isa = PBXBuildFile; fileRef = DF30F8A02069686B0047B97C /* cup.png */; };
+		DF30F8A52069686B0047B97C /* jersey.png in Resources */ = {isa = PBXBuildFile; fileRef = DF30F8A12069686B0047B97C /* jersey.png */; };
+		DF7E3C912071647400AD4CB7 /* Capitals@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C722071646300AD4CB7 /* Capitals@128px.png */; };
+		DF7E3C922071647400AD4CB7 /* Canucks@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C732071646300AD4CB7 /* Canucks@128px.png */; };
+		DF7E3C932071647400AD4CB7 /* Panthers@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C742071646400AD4CB7 /* Panthers@128px.png */; };
+		DF7E3C942071647400AD4CB7 /* Penguins@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C752071646400AD4CB7 /* Penguins@128px.png */; };
+		DF7E3C952071647400AD4CB7 /* Stars@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C762071646400AD4CB7 /* Stars@128px.png */; };
+		DF7E3C962071647400AD4CB7 /* Rangers@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C772071646500AD4CB7 /* Rangers@128px.png */; };
+		DF7E3C972071647400AD4CB7 /* Bruins@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C782071646500AD4CB7 /* Bruins@128px.png */; };
+		DF7E3C982071647400AD4CB7 /* Senators@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C792071646600AD4CB7 /* Senators@128px.png */; };
+		DF7E3C992071647400AD4CB7 /* Blackhawks@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C7A2071646600AD4CB7 /* Blackhawks@128px.png */; };
+		DF7E3C9A2071647400AD4CB7 /* Devils@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C7B2071646700AD4CB7 /* Devils@128px.png */; };
+		DF7E3C9B2071647400AD4CB7 /* Jets@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C7C2071646700AD4CB7 /* Jets@128px.png */; };
+		DF7E3C9C2071647400AD4CB7 /* Sharks@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C7D2071646800AD4CB7 /* Sharks@128px.png */; };
+		DF7E3C9D2071647400AD4CB7 /* Leafs@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C7E2071646800AD4CB7 /* Leafs@128px.png */; };
+		DF7E3C9E2071647400AD4CB7 /* Flames@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C7F2071646900AD4CB7 /* Flames@128px.png */; };
+		DF7E3C9F2071647400AD4CB7 /* Avalanche@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C802071646900AD4CB7 /* Avalanche@128px.png */; };
+		DF7E3CA02071647400AD4CB7 /* Wild@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C812071646A00AD4CB7 /* Wild@128px.png */; };
+		DF7E3CA12071647400AD4CB7 /* Hurricanes@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C822071646A00AD4CB7 /* Hurricanes@128px.png */; };
+		DF7E3CA22071647400AD4CB7 /* Blues@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C832071646A00AD4CB7 /* Blues@128px.png */; };
+		DF7E3CA32071647400AD4CB7 /* Lightning@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C842071646B00AD4CB7 /* Lightning@128px.png */; };
+		DF7E3CA42071647400AD4CB7 /* Coyotes@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C852071646B00AD4CB7 /* Coyotes@128px.png */; };
+		DF7E3CA52071647400AD4CB7 /* Canadians@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C862071646C00AD4CB7 /* Canadians@128px.png */; };
+		DF7E3CA62071647400AD4CB7 /* Jackets@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C872071646D00AD4CB7 /* Jackets@128px.png */; };
+		DF7E3CA72071647400AD4CB7 /* Ducks@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C882071646D00AD4CB7 /* Ducks@128px.png */; };
+		DF7E3CA82071647400AD4CB7 /* Islanders@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C892071646E00AD4CB7 /* Islanders@128px.png */; };
+		DF7E3CA92071647400AD4CB7 /* Wings@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C8A2071646F00AD4CB7 /* Wings@128px.png */; };
+		DF7E3CAA2071647400AD4CB7 /* Flyers@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C8B2071647000AD4CB7 /* Flyers@128px.png */; };
+		DF7E3CAB2071647400AD4CB7 /* Kings@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C8C2071647100AD4CB7 /* Kings@128px.png */; };
+		DF7E3CAC2071647400AD4CB7 /* Predators@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C8D2071647100AD4CB7 /* Predators@128px.png */; };
+		DF7E3CAD2071647400AD4CB7 /* Oilers@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C8E2071647200AD4CB7 /* Oilers@128px.png */; };
+		DF7E3CAE2071647400AD4CB7 /* Sabers@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C8F2071647300AD4CB7 /* Sabers@128px.png */; };
+		DF7E3CAF2071647400AD4CB7 /* Knights@128px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7E3C902071647300AD4CB7 /* Knights@128px.png */; };
+		DF7E3CB120717E2E00AD4CB7 /* PlayerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CB020717E2E00AD4CB7 /* PlayerViewCell.swift */; };
+		DF7E3CB320717E3A00AD4CB7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CB220717E3A00AD4CB7 /* Player.swift */; };
+		DF7E3CB52071868600AD4CB7 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CB42071868600AD4CB7 /* Team.swift */; };
+		DF7E3CB72071918400AD4CB7 /* TeamViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CB62071918400AD4CB7 /* TeamViewCell.swift */; };
+		DF7E3CBE2071A4F000AD4CB7 /* Stash.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CBD2071A4F000AD4CB7 /* Stash.swift */; };
+		DF7E3CC22071B8B300AD4CB7 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CC12071B8B300AD4CB7 /* Game.swift */; };
+		DF7E3CC42071C28C00AD4CB7 /* LocalTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CC32071C28C00AD4CB7 /* LocalTime.swift */; };
+		DF7E3CC62071CD3500AD4CB7 /* APIGlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CC52071CD3500AD4CB7 /* APIGlue.swift */; };
+		DF7E3CCA2071ED9900AD4CB7 /* UpcomingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CC92071ED9800AD4CB7 /* UpcomingViewCell.swift */; };
+		DF86BBE7206AD75200F22FB9 /* TeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBE6206AD75200F22FB9 /* TeamController.swift */; };
+		DF86BBE9206AD96400F22FB9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBE8206AD96400F22FB9 /* MenuViewController.swift */; };
+		DF86BBEB206AE4D300F22FB9 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBEA206AE4D300F22FB9 /* ScheduleController.swift */; };
+		DF86BBED206AE77900F22FB9 /* LiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBEC206AE77900F22FB9 /* LiveController.swift */; };
+		DF8C91AE206EBF2D000AFDB1 /* Ducks@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C918F206EBF2A000AFDB1 /* Ducks@40px.png */; };
+		DF8C91AF206EBF2D000AFDB1 /* Knights@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9190206EBF2A000AFDB1 /* Knights@40px.png */; };
+		DF8C91B0206EBF2D000AFDB1 /* Sabers@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9191206EBF2A000AFDB1 /* Sabers@40px.png */; };
+		DF8C91B1206EBF2D000AFDB1 /* Senators@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9192206EBF2A000AFDB1 /* Senators@40px.png */; };
+		DF8C91B2206EBF2D000AFDB1 /* Kings@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9193206EBF2A000AFDB1 /* Kings@40px.png */; };
+		DF8C91B3206EBF2D000AFDB1 /* Stars@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9194206EBF2A000AFDB1 /* Stars@40px.png */; };
+		DF8C91B4206EBF2D000AFDB1 /* Devils@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9195206EBF2A000AFDB1 /* Devils@40px.png */; };
+		DF8C91B5206EBF2D000AFDB1 /* Canucks@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9196206EBF2A000AFDB1 /* Canucks@40px.png */; };
+		DF8C91B6206EBF2D000AFDB1 /* Penguins@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9197206EBF2B000AFDB1 /* Penguins@40px.png */; };
+		DF8C91B7206EBF2D000AFDB1 /* Bruins@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9198206EBF2B000AFDB1 /* Bruins@40px.png */; };
+		DF8C91B8206EBF2D000AFDB1 /* Wings@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9199206EBF2B000AFDB1 /* Wings@40px.png */; };
+		DF8C91B9206EBF2D000AFDB1 /* Oilers@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C919A206EBF2B000AFDB1 /* Oilers@40px.png */; };
+		DF8C91BA206EBF2D000AFDB1 /* Lightning@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C919B206EBF2B000AFDB1 /* Lightning@40px.png */; };
+		DF8C91BB206EBF2D000AFDB1 /* Coyotes@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C919C206EBF2B000AFDB1 /* Coyotes@40px.png */; };
+		DF8C91BC206EBF2D000AFDB1 /* Predators@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C919D206EBF2B000AFDB1 /* Predators@40px.png */; };
+		DF8C91BD206EBF2D000AFDB1 /* Sharks@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C919E206EBF2B000AFDB1 /* Sharks@40px.png */; };
+		DF8C91BE206EBF2D000AFDB1 /* Canadians@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C919F206EBF2B000AFDB1 /* Canadians@40px.png */; };
+		DF8C91BF206EBF2D000AFDB1 /* Flyers@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A0206EBF2B000AFDB1 /* Flyers@40px.png */; };
+		DF8C91C0206EBF2D000AFDB1 /* Leafs@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A1206EBF2C000AFDB1 /* Leafs@40px.png */; };
+		DF8C91C1206EBF2D000AFDB1 /* Flames@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A2206EBF2C000AFDB1 /* Flames@40px.png */; };
+		DF8C91C2206EBF2D000AFDB1 /* Capitals@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A3206EBF2C000AFDB1 /* Capitals@40px.png */; };
+		DF8C91C3206EBF2D000AFDB1 /* Rangers@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A4206EBF2C000AFDB1 /* Rangers@40px.png */; };
+		DF8C91C4206EBF2D000AFDB1 /* Wild@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A5206EBF2C000AFDB1 /* Wild@40px.png */; };
+		DF8C91C5206EBF2D000AFDB1 /* Blackhawks@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A6206EBF2C000AFDB1 /* Blackhawks@40px.png */; };
+		DF8C91C6206EBF2D000AFDB1 /* Jackets@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A7206EBF2C000AFDB1 /* Jackets@40px.png */; };
+		DF8C91C7206EBF2D000AFDB1 /* Panthers@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A8206EBF2C000AFDB1 /* Panthers@40px.png */; };
+		DF8C91CA206EBF2D000AFDB1 /* Avalanche@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91AB206EBF2C000AFDB1 /* Avalanche@40px.png */; };
+		DF8C91CB206EBF2D000AFDB1 /* Hurricanes@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91AC206EBF2D000AFDB1 /* Hurricanes@40px.png */; };
+		DF8C91CC206EBF2D000AFDB1 /* Islanders@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91AD206EBF2D000AFDB1 /* Islanders@40px.png */; };
+		DFB04A1D206457CC000B3074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB04A1C206457CC000B3074 /* AppDelegate.swift */; };
+		DFB04A22206457CC000B3074 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB04A20206457CC000B3074 /* Main.storyboard */; };
+		DFB04A24206457CC000B3074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB04A23206457CC000B3074 /* Assets.xcassets */; };
+		DFB04A27206457CC000B3074 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB04A25206457CC000B3074 /* LaunchScreen.storyboard */; };
+		DFB04A32206457CC000B3074 /* NHLStatTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB04A31206457CC000B3074 /* NHLStatTrackTests.swift */; };
+		DFB04A3D206457CC000B3074 /* NHLStatTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB04A3C206457CC000B3074 /* NHLStatTrackUITests.swift */; };
+		DFB04A4E206473E1000B3074 /* Stat.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB04A4D206473E1000B3074 /* Stat.png */; };
+		DFB04A50206473E7000B3074 /* Nav.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB04A4F206473E7000B3074 /* Nav.png */; };
+		DFBA74EB20706A310026BBF4 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBA74E920706A300026BBF4 /* Cache.swift */; };
+		DFBA74EC20706A310026BBF4 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBA74EA20706A310026BBF4 /* APIRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFB04A2E206457CC000B3074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFB04A11206457CC000B3074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFB04A18206457CC000B3074;
+			remoteInfo = NHLStatTrack;
+		};
+		DFB04A39206457CC000B3074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFB04A11206457CC000B3074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFB04A18206457CC000B3074;
+			remoteInfo = NHLStatTrack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37B1DA162071A75300DB71A4 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		37D0697920706BD400CD4038 /* Stash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stash.swift; sourceTree = "<group>"; };
+		DF071E4D2070683D00A0A8B3 /* TeamStatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStatController.swift; sourceTree = "<group>"; };
+		DF0C78B6206AC1B100FC9B86 /* NHLStatTrack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NHLStatTrack-Bridging-Header.h"; sourceTree = "<group>"; };
+		DF0C78B7206AC1B200FC9B86 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		DF0C78B8206AC1B200FC9B86 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		DF0C78BC206AC46500FC9B86 /* StandingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingController.swift; sourceTree = "<group>"; };
+		DF30F89E2069686A0047B97C /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		DF30F89F2069686B0047B97C /* live.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = live.png; sourceTree = "<group>"; };
+		DF30F8A02069686B0047B97C /* cup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cup.png; sourceTree = "<group>"; };
+		DF30F8A12069686B0047B97C /* jersey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jersey.png; sourceTree = "<group>"; };
+		DF7E3C722071646300AD4CB7 /* Capitals@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Capitals@128px.png"; sourceTree = "<group>"; };
+		DF7E3C732071646300AD4CB7 /* Canucks@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Canucks@128px.png"; sourceTree = "<group>"; };
+		DF7E3C742071646400AD4CB7 /* Panthers@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Panthers@128px.png"; sourceTree = "<group>"; };
+		DF7E3C752071646400AD4CB7 /* Penguins@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Penguins@128px.png"; sourceTree = "<group>"; };
+		DF7E3C762071646400AD4CB7 /* Stars@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stars@128px.png"; sourceTree = "<group>"; };
+		DF7E3C772071646500AD4CB7 /* Rangers@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rangers@128px.png"; sourceTree = "<group>"; };
+		DF7E3C782071646500AD4CB7 /* Bruins@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bruins@128px.png"; sourceTree = "<group>"; };
+		DF7E3C792071646600AD4CB7 /* Senators@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Senators@128px.png"; sourceTree = "<group>"; };
+		DF7E3C7A2071646600AD4CB7 /* Blackhawks@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blackhawks@128px.png"; sourceTree = "<group>"; };
+		DF7E3C7B2071646700AD4CB7 /* Devils@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Devils@128px.png"; sourceTree = "<group>"; };
+		DF7E3C7C2071646700AD4CB7 /* Jets@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jets@128px.png"; sourceTree = "<group>"; };
+		DF7E3C7D2071646800AD4CB7 /* Sharks@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sharks@128px.png"; sourceTree = "<group>"; };
+		DF7E3C7E2071646800AD4CB7 /* Leafs@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leafs@128px.png"; sourceTree = "<group>"; };
+		DF7E3C7F2071646900AD4CB7 /* Flames@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flames@128px.png"; sourceTree = "<group>"; };
+		DF7E3C802071646900AD4CB7 /* Avalanche@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Avalanche@128px.png"; sourceTree = "<group>"; };
+		DF7E3C812071646A00AD4CB7 /* Wild@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wild@128px.png"; sourceTree = "<group>"; };
+		DF7E3C822071646A00AD4CB7 /* Hurricanes@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hurricanes@128px.png"; sourceTree = "<group>"; };
+		DF7E3C832071646A00AD4CB7 /* Blues@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blues@128px.png"; sourceTree = "<group>"; };
+		DF7E3C842071646B00AD4CB7 /* Lightning@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lightning@128px.png"; sourceTree = "<group>"; };
+		DF7E3C852071646B00AD4CB7 /* Coyotes@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Coyotes@128px.png"; sourceTree = "<group>"; };
+		DF7E3C862071646C00AD4CB7 /* Canadians@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Canadians@128px.png"; sourceTree = "<group>"; };
+		DF7E3C872071646D00AD4CB7 /* Jackets@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jackets@128px.png"; sourceTree = "<group>"; };
+		DF7E3C882071646D00AD4CB7 /* Ducks@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ducks@128px.png"; sourceTree = "<group>"; };
+		DF7E3C892071646E00AD4CB7 /* Islanders@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Islanders@128px.png"; sourceTree = "<group>"; };
+		DF7E3C8A2071646F00AD4CB7 /* Wings@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wings@128px.png"; sourceTree = "<group>"; };
+		DF7E3C8B2071647000AD4CB7 /* Flyers@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flyers@128px.png"; sourceTree = "<group>"; };
+		DF7E3C8C2071647100AD4CB7 /* Kings@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kings@128px.png"; sourceTree = "<group>"; };
+		DF7E3C8D2071647100AD4CB7 /* Predators@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Predators@128px.png"; sourceTree = "<group>"; };
+		DF7E3C8E2071647200AD4CB7 /* Oilers@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oilers@128px.png"; sourceTree = "<group>"; };
+		DF7E3C8F2071647300AD4CB7 /* Sabers@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sabers@128px.png"; sourceTree = "<group>"; };
+		DF7E3C902071647300AD4CB7 /* Knights@128px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knights@128px.png"; sourceTree = "<group>"; };
+		DF7E3CB020717E2E00AD4CB7 /* PlayerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewCell.swift; sourceTree = "<group>"; };
+		DF7E3CB220717E3A00AD4CB7 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		DF7E3CB42071868600AD4CB7 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		DF7E3CB62071918400AD4CB7 /* TeamViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewCell.swift; sourceTree = "<group>"; };
+		DF7E3CBD2071A4F000AD4CB7 /* Stash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stash.swift; sourceTree = "<group>"; };
+		DF7E3CBF2071B89500AD4CB7 /* UpcomingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewCell.swift; sourceTree = "<group>"; };
+		DF7E3CC12071B8B300AD4CB7 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		DF7E3CC32071C28C00AD4CB7 /* LocalTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTime.swift; sourceTree = "<group>"; };
+		DF7E3CC52071CD3500AD4CB7 /* APIGlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGlue.swift; sourceTree = "<group>"; };
+		DF7E3CC92071ED9800AD4CB7 /* UpcomingViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingViewCell.swift; sourceTree = "<group>"; };
+		DF86BBE6206AD75200F22FB9 /* TeamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
+		DF86BBE8206AD96400F22FB9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		DF86BBEA206AE4D300F22FB9 /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
+		DF86BBEC206AE77900F22FB9 /* LiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveController.swift; sourceTree = "<group>"; };
+		DF8C918F206EBF2A000AFDB1 /* Ducks@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ducks@40px.png"; sourceTree = "<group>"; };
+		DF8C9190206EBF2A000AFDB1 /* Knights@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knights@40px.png"; sourceTree = "<group>"; };
+		DF8C9191206EBF2A000AFDB1 /* Sabers@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sabers@40px.png"; sourceTree = "<group>"; };
+		DF8C9192206EBF2A000AFDB1 /* Senators@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Senators@40px.png"; sourceTree = "<group>"; };
+		DF8C9193206EBF2A000AFDB1 /* Kings@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kings@40px.png"; sourceTree = "<group>"; };
+		DF8C9194206EBF2A000AFDB1 /* Stars@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stars@40px.png"; sourceTree = "<group>"; };
+		DF8C9195206EBF2A000AFDB1 /* Devils@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Devils@40px.png"; sourceTree = "<group>"; };
+		DF8C9196206EBF2A000AFDB1 /* Canucks@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Canucks@40px.png"; sourceTree = "<group>"; };
+		DF8C9197206EBF2B000AFDB1 /* Penguins@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Penguins@40px.png"; sourceTree = "<group>"; };
+		DF8C9198206EBF2B000AFDB1 /* Bruins@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bruins@40px.png"; sourceTree = "<group>"; };
+		DF8C9199206EBF2B000AFDB1 /* Wings@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wings@40px.png"; sourceTree = "<group>"; };
+		DF8C919A206EBF2B000AFDB1 /* Oilers@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oilers@40px.png"; sourceTree = "<group>"; };
+		DF8C919B206EBF2B000AFDB1 /* Lightning@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lightning@40px.png"; sourceTree = "<group>"; };
+		DF8C919C206EBF2B000AFDB1 /* Coyotes@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Coyotes@40px.png"; sourceTree = "<group>"; };
+		DF8C919D206EBF2B000AFDB1 /* Predators@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Predators@40px.png"; sourceTree = "<group>"; };
+		DF8C919E206EBF2B000AFDB1 /* Sharks@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sharks@40px.png"; sourceTree = "<group>"; };
+		DF8C919F206EBF2B000AFDB1 /* Canadians@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Canadians@40px.png"; sourceTree = "<group>"; };
+		DF8C91A0206EBF2B000AFDB1 /* Flyers@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flyers@40px.png"; sourceTree = "<group>"; };
+		DF8C91A1206EBF2C000AFDB1 /* Leafs@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leafs@40px.png"; sourceTree = "<group>"; };
+		DF8C91A2206EBF2C000AFDB1 /* Flames@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flames@40px.png"; sourceTree = "<group>"; };
+		DF8C91A3206EBF2C000AFDB1 /* Capitals@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Capitals@40px.png"; sourceTree = "<group>"; };
+		DF8C91A4206EBF2C000AFDB1 /* Rangers@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rangers@40px.png"; sourceTree = "<group>"; };
+		DF8C91A5206EBF2C000AFDB1 /* Wild@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wild@40px.png"; sourceTree = "<group>"; };
+		DF8C91A6206EBF2C000AFDB1 /* Blackhawks@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blackhawks@40px.png"; sourceTree = "<group>"; };
+		DF8C91A7206EBF2C000AFDB1 /* Jackets@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jackets@40px.png"; sourceTree = "<group>"; };
+		DF8C91A8206EBF2C000AFDB1 /* Panthers@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Panthers@40px.png"; sourceTree = "<group>"; };
+		DF8C91AB206EBF2C000AFDB1 /* Avalanche@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Avalanche@40px.png"; sourceTree = "<group>"; };
+		DF8C91AC206EBF2D000AFDB1 /* Hurricanes@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hurricanes@40px.png"; sourceTree = "<group>"; };
+		DF8C91AD206EBF2D000AFDB1 /* Islanders@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Islanders@40px.png"; sourceTree = "<group>"; };
+		DFB04A19206457CC000B3074 /* NHLStatTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHLStatTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB04A1C206457CC000B3074 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFB04A21206457CC000B3074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFB04A23206457CC000B3074 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFB04A26206457CC000B3074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFB04A28206457CC000B3074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB04A2D206457CC000B3074 /* NHLStatTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHLStatTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB04A31206457CC000B3074 /* NHLStatTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHLStatTrackTests.swift; sourceTree = "<group>"; };
+		DFB04A33206457CC000B3074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB04A38206457CC000B3074 /* NHLStatTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHLStatTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB04A3C206457CC000B3074 /* NHLStatTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHLStatTrackUITests.swift; sourceTree = "<group>"; };
+		DFB04A3E206457CC000B3074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB04A4D206473E1000B3074 /* Stat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stat.png; sourceTree = "<group>"; };
+		DFB04A4F206473E7000B3074 /* Nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nav.png; sourceTree = "<group>"; };
+		DFBA74E920706A300026BBF4 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		DFBA74EA20706A310026BBF4 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFB04A16206457CC000B3074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB04A2A206457CC000B3074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB04A35206457CC000B3074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF071E4C2070512600A0A8B3 /* Teams@128px */ = {
+			isa = PBXGroup;
+			children = (
+				DF7E3C802071646900AD4CB7 /* Avalanche@128px.png */,
+				DF7E3C7A2071646600AD4CB7 /* Blackhawks@128px.png */,
+				DF7E3C832071646A00AD4CB7 /* Blues@128px.png */,
+				DF7E3C782071646500AD4CB7 /* Bruins@128px.png */,
+				DF7E3C862071646C00AD4CB7 /* Canadians@128px.png */,
+				DF7E3C732071646300AD4CB7 /* Canucks@128px.png */,
+				DF7E3C722071646300AD4CB7 /* Capitals@128px.png */,
+				DF7E3C852071646B00AD4CB7 /* Coyotes@128px.png */,
+				DF7E3C7B2071646700AD4CB7 /* Devils@128px.png */,
+				DF7E3C882071646D00AD4CB7 /* Ducks@128px.png */,
+				DF7E3C7F2071646900AD4CB7 /* Flames@128px.png */,
+				DF7E3C8B2071647000AD4CB7 /* Flyers@128px.png */,
+				DF7E3C822071646A00AD4CB7 /* Hurricanes@128px.png */,
+				DF7E3C892071646E00AD4CB7 /* Islanders@128px.png */,
+				DF7E3C872071646D00AD4CB7 /* Jackets@128px.png */,
+				DF7E3C7C2071646700AD4CB7 /* Jets@128px.png */,
+				DF7E3C8C2071647100AD4CB7 /* Kings@128px.png */,
+				DF7E3C902071647300AD4CB7 /* Knights@128px.png */,
+				DF7E3C7E2071646800AD4CB7 /* Leafs@128px.png */,
+				DF7E3C842071646B00AD4CB7 /* Lightning@128px.png */,
+				DF7E3C8E2071647200AD4CB7 /* Oilers@128px.png */,
+				DF7E3C742071646400AD4CB7 /* Panthers@128px.png */,
+				DF7E3C752071646400AD4CB7 /* Penguins@128px.png */,
+				DF7E3C8D2071647100AD4CB7 /* Predators@128px.png */,
+				DF7E3C772071646500AD4CB7 /* Rangers@128px.png */,
+				DF7E3C8F2071647300AD4CB7 /* Sabers@128px.png */,
+				DF7E3C792071646600AD4CB7 /* Senators@128px.png */,
+				DF7E3C7D2071646800AD4CB7 /* Sharks@128px.png */,
+				DF7E3C762071646400AD4CB7 /* Stars@128px.png */,
+				DF7E3C812071646A00AD4CB7 /* Wild@128px.png */,
+				DF7E3C8A2071646F00AD4CB7 /* Wings@128px.png */,
+			);
+			path = "Teams@128px";
+			sourceTree = "<group>";
+		};
+		DF7E3CB82071A45600AD4CB7 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				37D0697920706BD400CD4038 /* Stash.swift */,
+				DF7E3CBF2071B89500AD4CB7 /* UpcomingViewCell.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		DF8C918E206EBF04000AFDB1 /* Teams@40px */ = {
+			isa = PBXGroup;
+			children = (
+				DF8C91AB206EBF2C000AFDB1 /* Avalanche@40px.png */,
+				DF8C91A6206EBF2C000AFDB1 /* Blackhawks@40px.png */,
+				DF8C9198206EBF2B000AFDB1 /* Bruins@40px.png */,
+				DF8C919F206EBF2B000AFDB1 /* Canadians@40px.png */,
+				DF8C9196206EBF2A000AFDB1 /* Canucks@40px.png */,
+				DF8C91A3206EBF2C000AFDB1 /* Capitals@40px.png */,
+				DF8C919C206EBF2B000AFDB1 /* Coyotes@40px.png */,
+				DF8C9195206EBF2A000AFDB1 /* Devils@40px.png */,
+				DF8C918F206EBF2A000AFDB1 /* Ducks@40px.png */,
+				DF8C91A2206EBF2C000AFDB1 /* Flames@40px.png */,
+				DF8C91A0206EBF2B000AFDB1 /* Flyers@40px.png */,
+				DF8C91AC206EBF2D000AFDB1 /* Hurricanes@40px.png */,
+				DF8C91AD206EBF2D000AFDB1 /* Islanders@40px.png */,
+				DF8C91A7206EBF2C000AFDB1 /* Jackets@40px.png */,
+				DF8C9193206EBF2A000AFDB1 /* Kings@40px.png */,
+				DF8C9190206EBF2A000AFDB1 /* Knights@40px.png */,
+				DF8C91A1206EBF2C000AFDB1 /* Leafs@40px.png */,
+				DF8C919B206EBF2B000AFDB1 /* Lightning@40px.png */,
+				DF8C919A206EBF2B000AFDB1 /* Oilers@40px.png */,
+				DF8C91A8206EBF2C000AFDB1 /* Panthers@40px.png */,
+				DF8C9197206EBF2B000AFDB1 /* Penguins@40px.png */,
+				DF8C919D206EBF2B000AFDB1 /* Predators@40px.png */,
+				DF8C91A4206EBF2C000AFDB1 /* Rangers@40px.png */,
+				DF8C9191206EBF2A000AFDB1 /* Sabers@40px.png */,
+				DF8C9192206EBF2A000AFDB1 /* Senators@40px.png */,
+				DF8C919E206EBF2B000AFDB1 /* Sharks@40px.png */,
+				DF8C9194206EBF2A000AFDB1 /* Stars@40px.png */,
+				DF8C91A5206EBF2C000AFDB1 /* Wild@40px.png */,
+				DF8C9199206EBF2B000AFDB1 /* Wings@40px.png */,
+			);
+			path = "Teams@40px";
+			sourceTree = "<group>";
+		};
+		DFB04A10206457CC000B3074 = {
+			isa = PBXGroup;
+			children = (
+				DFB04A4C206473D2000B3074 /* Resources */,
+				DFB04A1B206457CC000B3074 /* NHLStatTrack */,
+				DFB04A30206457CC000B3074 /* NHLStatTrackTests */,
+				DFB04A3B206457CC000B3074 /* NHLStatTrackUITests */,
+				DFB04A1A206457CC000B3074 /* Products */,
+				DF7E3CB82071A45600AD4CB7 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		DFB04A1A206457CC000B3074 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFB04A19206457CC000B3074 /* NHLStatTrack.app */,
+				DFB04A2D206457CC000B3074 /* NHLStatTrackTests.xctest */,
+				DFB04A38206457CC000B3074 /* NHLStatTrackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFB04A1B206457CC000B3074 /* NHLStatTrack */ = {
+			isa = PBXGroup;
+			children = (
+				DF7E3CC52071CD3500AD4CB7 /* APIGlue.swift */,
+				DFBA74EA20706A310026BBF4 /* APIRequest.swift */,
+				DFB04A1C206457CC000B3074 /* AppDelegate.swift */,
+				DFB04A23206457CC000B3074 /* Assets.xcassets */,
+				DFBA74E920706A300026BBF4 /* Cache.swift */,
+				DF7E3CC12071B8B300AD4CB7 /* Game.swift */,
+				DFB04A28206457CC000B3074 /* Info.plist */,
+				DFB04A25206457CC000B3074 /* LaunchScreen.storyboard */,
+				DF86BBEC206AE77900F22FB9 /* LiveController.swift */,
+				DF7E3CC32071C28C00AD4CB7 /* LocalTime.swift */,
+				DFB04A20206457CC000B3074 /* Main.storyboard */,
+				DF86BBE8206AD96400F22FB9 /* MenuViewController.swift */,
+				DF0C78B6206AC1B100FC9B86 /* NHLStatTrack-Bridging-Header.h */,
+				DF7E3CB220717E3A00AD4CB7 /* Player.swift */,
+				DF7E3CB020717E2E00AD4CB7 /* PlayerViewCell.swift */,
+				DF86BBEA206AE4D300F22FB9 /* ScheduleController.swift */,
+				DF0C78BC206AC46500FC9B86 /* StandingController.swift */,
+				DF7E3CBD2071A4F000AD4CB7 /* Stash.swift */,
+				DF0C78B7206AC1B200FC9B86 /* SWRevealViewController.h */,
+				DF0C78B8206AC1B200FC9B86 /* SWRevealViewController.m */,
+				DF7E3CB42071868600AD4CB7 /* Team.swift */,
+				DF86BBE6206AD75200F22FB9 /* TeamController.swift */,
+				DF071E4D2070683D00A0A8B3 /* TeamStatController.swift */,
+				DF7E3CB62071918400AD4CB7 /* TeamViewCell.swift */,
+				DF7E3CC92071ED9800AD4CB7 /* UpcomingViewCell.swift */,
+				37B1DA162071A75300DB71A4 /* JSONParser.swift */,
+			);
+			path = NHLStatTrack;
+			sourceTree = "<group>";
+		};
+		DFB04A30206457CC000B3074 /* NHLStatTrackTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFB04A31206457CC000B3074 /* NHLStatTrackTests.swift */,
+				DFB04A33206457CC000B3074 /* Info.plist */,
+			);
+			path = NHLStatTrackTests;
+			sourceTree = "<group>";
+		};
+		DFB04A3B206457CC000B3074 /* NHLStatTrackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DFB04A3C206457CC000B3074 /* NHLStatTrackUITests.swift */,
+				DFB04A3E206457CC000B3074 /* Info.plist */,
+			);
+			path = NHLStatTrackUITests;
+			sourceTree = "<group>";
+		};
+		DFB04A4C206473D2000B3074 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF071E4C2070512600A0A8B3 /* Teams@128px */,
+				DF8C918E206EBF04000AFDB1 /* Teams@40px */,
+				DF30F89E2069686A0047B97C /* calendar.png */,
+				DF30F8A02069686B0047B97C /* cup.png */,
+				DF30F8A12069686B0047B97C /* jersey.png */,
+				DF30F89F2069686B0047B97C /* live.png */,
+				DFB04A4F206473E7000B3074 /* Nav.png */,
+				DFB04A4D206473E1000B3074 /* Stat.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFB04A18206457CC000B3074 /* NHLStatTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB04A41206457CC000B3074 /* Build configuration list for PBXNativeTarget "NHLStatTrack" */;
+			buildPhases = (
+				DFB04A15206457CC000B3074 /* Sources */,
+				DFB04A16206457CC000B3074 /* Frameworks */,
+				DFB04A17206457CC000B3074 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NHLStatTrack;
+			productName = NHLStatTrack;
+			productReference = DFB04A19206457CC000B3074 /* NHLStatTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFB04A2C206457CC000B3074 /* NHLStatTrackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB04A44206457CC000B3074 /* Build configuration list for PBXNativeTarget "NHLStatTrackTests" */;
+			buildPhases = (
+				DFB04A29206457CC000B3074 /* Sources */,
+				DFB04A2A206457CC000B3074 /* Frameworks */,
+				DFB04A2B206457CC000B3074 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFB04A2F206457CC000B3074 /* PBXTargetDependency */,
+			);
+			name = NHLStatTrackTests;
+			productName = NHLStatTrackTests;
+			productReference = DFB04A2D206457CC000B3074 /* NHLStatTrackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFB04A37206457CC000B3074 /* NHLStatTrackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB04A47206457CC000B3074 /* Build configuration list for PBXNativeTarget "NHLStatTrackUITests" */;
+			buildPhases = (
+				DFB04A34206457CC000B3074 /* Sources */,
+				DFB04A35206457CC000B3074 /* Frameworks */,
+				DFB04A36206457CC000B3074 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFB04A3A206457CC000B3074 /* PBXTargetDependency */,
+			);
+			name = NHLStatTrackUITests;
+			productName = NHLStatTrackUITests;
+			productReference = DFB04A38206457CC000B3074 /* NHLStatTrackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFB04A11206457CC000B3074 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "UofG Students";
+				TargetAttributes = {
+					DFB04A18206457CC000B3074 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					DFB04A2C206457CC000B3074 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFB04A18206457CC000B3074;
+					};
+					DFB04A37206457CC000B3074 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFB04A18206457CC000B3074;
+					};
+				};
+			};
+			buildConfigurationList = DFB04A14206457CC000B3074 /* Build configuration list for PBXProject "NHLStatTrack" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFB04A10206457CC000B3074;
+			productRefGroup = DFB04A1A206457CC000B3074 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFB04A18206457CC000B3074 /* NHLStatTrack */,
+				DFB04A2C206457CC000B3074 /* NHLStatTrackTests */,
+				DFB04A37206457CC000B3074 /* NHLStatTrackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFB04A17206457CC000B3074 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF8C91B6206EBF2D000AFDB1 /* Penguins@40px.png in Resources */,
+				DF8C91AF206EBF2D000AFDB1 /* Knights@40px.png in Resources */,
+				DF7E3CA82071647400AD4CB7 /* Islanders@128px.png in Resources */,
+				DF7E3CA02071647400AD4CB7 /* Wild@128px.png in Resources */,
+				DF30F8A32069686B0047B97C /* live.png in Resources */,
+				DFB04A27206457CC000B3074 /* LaunchScreen.storyboard in Resources */,
+				DF8C91C4206EBF2D000AFDB1 /* Wild@40px.png in Resources */,
+				DF30F8A42069686B0047B97C /* cup.png in Resources */,
+				DF8C91CC206EBF2D000AFDB1 /* Islanders@40px.png in Resources */,
+				DF7E3C942071647400AD4CB7 /* Penguins@128px.png in Resources */,
+				DF30F8A22069686B0047B97C /* calendar.png in Resources */,
+				DF7E3CA92071647400AD4CB7 /* Wings@128px.png in Resources */,
+				DF7E3CA52071647400AD4CB7 /* Canadians@128px.png in Resources */,
+				DF7E3C9B2071647400AD4CB7 /* Jets@128px.png in Resources */,
+				DF8C91C5206EBF2D000AFDB1 /* Blackhawks@40px.png in Resources */,
+				DF8C91B9206EBF2D000AFDB1 /* Oilers@40px.png in Resources */,
+				DFB04A24206457CC000B3074 /* Assets.xcassets in Resources */,
+				DF8C91B0206EBF2D000AFDB1 /* Sabers@40px.png in Resources */,
+				DF7E3C9A2071647400AD4CB7 /* Devils@128px.png in Resources */,
+				DF7E3CA22071647400AD4CB7 /* Blues@128px.png in Resources */,
+				DF7E3C9D2071647400AD4CB7 /* Leafs@128px.png in Resources */,
+				DF8C91BE206EBF2D000AFDB1 /* Canadians@40px.png in Resources */,
+				DF8C91BB206EBF2D000AFDB1 /* Coyotes@40px.png in Resources */,
+				DF8C91B3206EBF2D000AFDB1 /* Stars@40px.png in Resources */,
+				DF8C91BF206EBF2D000AFDB1 /* Flyers@40px.png in Resources */,
+				DFB04A50206473E7000B3074 /* Nav.png in Resources */,
+				DF7E3C992071647400AD4CB7 /* Blackhawks@128px.png in Resources */,
+				DF8C91B1206EBF2D000AFDB1 /* Senators@40px.png in Resources */,
+				DF8C91B8206EBF2D000AFDB1 /* Wings@40px.png in Resources */,
+				DF8C91C7206EBF2D000AFDB1 /* Panthers@40px.png in Resources */,
+				DF8C91C0206EBF2D000AFDB1 /* Leafs@40px.png in Resources */,
+				DF7E3C9F2071647400AD4CB7 /* Avalanche@128px.png in Resources */,
+				DF7E3CA12071647400AD4CB7 /* Hurricanes@128px.png in Resources */,
+				DF8C91B4206EBF2D000AFDB1 /* Devils@40px.png in Resources */,
+				DF7E3C9C2071647400AD4CB7 /* Sharks@128px.png in Resources */,
+				DF8C91C2206EBF2D000AFDB1 /* Capitals@40px.png in Resources */,
+				DF7E3C922071647400AD4CB7 /* Canucks@128px.png in Resources */,
+				DF7E3C9E2071647400AD4CB7 /* Flames@128px.png in Resources */,
+				DF7E3C962071647400AD4CB7 /* Rangers@128px.png in Resources */,
+				DF8C91AE206EBF2D000AFDB1 /* Ducks@40px.png in Resources */,
+				DF7E3C972071647400AD4CB7 /* Bruins@128px.png in Resources */,
+				DF8C91C1206EBF2D000AFDB1 /* Flames@40px.png in Resources */,
+				DFB04A22206457CC000B3074 /* Main.storyboard in Resources */,
+				DF7E3CAD2071647400AD4CB7 /* Oilers@128px.png in Resources */,
+				DF8C91BD206EBF2D000AFDB1 /* Sharks@40px.png in Resources */,
+				DF8C91B7206EBF2D000AFDB1 /* Bruins@40px.png in Resources */,
+				DF8C91B5206EBF2D000AFDB1 /* Canucks@40px.png in Resources */,
+				DF8C91CB206EBF2D000AFDB1 /* Hurricanes@40px.png in Resources */,
+				DFB04A4E206473E1000B3074 /* Stat.png in Resources */,
+				DF8C91C6206EBF2D000AFDB1 /* Jackets@40px.png in Resources */,
+				DF7E3C952071647400AD4CB7 /* Stars@128px.png in Resources */,
+				DF8C91BA206EBF2D000AFDB1 /* Lightning@40px.png in Resources */,
+				DF8C91BC206EBF2D000AFDB1 /* Predators@40px.png in Resources */,
+				DF7E3C912071647400AD4CB7 /* Capitals@128px.png in Resources */,
+				DF7E3CAC2071647400AD4CB7 /* Predators@128px.png in Resources */,
+				DF8C91B2206EBF2D000AFDB1 /* Kings@40px.png in Resources */,
+				DF7E3C982071647400AD4CB7 /* Senators@128px.png in Resources */,
+				DF8C91C3206EBF2D000AFDB1 /* Rangers@40px.png in Resources */,
+				DF7E3CAE2071647400AD4CB7 /* Sabers@128px.png in Resources */,
+				DF8C91CA206EBF2D000AFDB1 /* Avalanche@40px.png in Resources */,
+				DF7E3CA72071647400AD4CB7 /* Ducks@128px.png in Resources */,
+				DF30F8A52069686B0047B97C /* jersey.png in Resources */,
+				DF7E3CAB2071647400AD4CB7 /* Kings@128px.png in Resources */,
+				DF7E3CAA2071647400AD4CB7 /* Flyers@128px.png in Resources */,
+				DF7E3CA62071647400AD4CB7 /* Jackets@128px.png in Resources */,
+				DF7E3CAF2071647400AD4CB7 /* Knights@128px.png in Resources */,
+				DF7E3CA42071647400AD4CB7 /* Coyotes@128px.png in Resources */,
+				DF7E3C932071647400AD4CB7 /* Panthers@128px.png in Resources */,
+				DF7E3CA32071647400AD4CB7 /* Lightning@128px.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB04A2B206457CC000B3074 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB04A36206457CC000B3074 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFB04A15206457CC000B3074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0C78BD206AC46500FC9B86 /* StandingController.swift in Sources */,
+				DFBA74EB20706A310026BBF4 /* Cache.swift in Sources */,
+				37B1DA172071A75300DB71A4 /* JSONParser.swift in Sources */,
+				DF7E3CB52071868600AD4CB7 /* Team.swift in Sources */,
+				DF7E3CCA2071ED9900AD4CB7 /* UpcomingViewCell.swift in Sources */,
+				DF7E3CB72071918400AD4CB7 /* TeamViewCell.swift in Sources */,
+				DF86BBE9206AD96400F22FB9 /* MenuViewController.swift in Sources */,
+				DF071E4E2070683D00A0A8B3 /* TeamStatController.swift in Sources */,
+				DF7E3CB320717E3A00AD4CB7 /* Player.swift in Sources */,
+				DF86BBEB206AE4D300F22FB9 /* ScheduleController.swift in Sources */,
+				DF7E3CC42071C28C00AD4CB7 /* LocalTime.swift in Sources */,
+				DF7E3CBE2071A4F000AD4CB7 /* Stash.swift in Sources */,
+				DF86BBED206AE77900F22FB9 /* LiveController.swift in Sources */,
+				DF7E3CB120717E2E00AD4CB7 /* PlayerViewCell.swift in Sources */,
+				DF7E3CC62071CD3500AD4CB7 /* APIGlue.swift in Sources */,
+				DFB04A1D206457CC000B3074 /* AppDelegate.swift in Sources */,
+				DF86BBE7206AD75200F22FB9 /* TeamController.swift in Sources */,
+				DF7E3CC22071B8B300AD4CB7 /* Game.swift in Sources */,
+				DFBA74EC20706A310026BBF4 /* APIRequest.swift in Sources */,
+				DF0C78B9206AC1B200FC9B86 /* SWRevealViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB04A29206457CC000B3074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB04A32206457CC000B3074 /* NHLStatTrackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB04A34206457CC000B3074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB04A3D206457CC000B3074 /* NHLStatTrackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFB04A2F206457CC000B3074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFB04A18206457CC000B3074 /* NHLStatTrack */;
+			targetProxy = DFB04A2E206457CC000B3074 /* PBXContainerItemProxy */;
+		};
+		DFB04A3A206457CC000B3074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFB04A18206457CC000B3074 /* NHLStatTrack */;
+			targetProxy = DFB04A39206457CC000B3074 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFB04A20206457CC000B3074 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFB04A21206457CC000B3074 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFB04A25206457CC000B3074 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFB04A26206457CC000B3074 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFB04A3F206457CC000B3074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFB04A40206457CC000B3074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFB04A42206457CC000B3074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NHLStatTrack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gandt.NHLStatTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NHLStatTrack/NHLStatTrack-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFB04A43206457CC000B3074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NHLStatTrack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gandt.NHLStatTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NHLStatTrack/NHLStatTrack-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFB04A45206457CC000B3074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NHLStatTrackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gandt.NHLStatTrackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NHLStatTrack.app/NHLStatTrack";
+			};
+			name = Debug;
+		};
+		DFB04A46206457CC000B3074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NHLStatTrackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gandt.NHLStatTrackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NHLStatTrack.app/NHLStatTrack";
+			};
+			name = Release;
+		};
+		DFB04A48206457CC000B3074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NHLStatTrackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gandt.NHLStatTrackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NHLStatTrack;
+			};
+			name = Debug;
+		};
+		DFB04A49206457CC000B3074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NHLStatTrackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gandt.NHLStatTrackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NHLStatTrack;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFB04A14206457CC000B3074 /* Build configuration list for PBXProject "NHLStatTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB04A3F206457CC000B3074 /* Debug */,
+				DFB04A40206457CC000B3074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB04A41206457CC000B3074 /* Build configuration list for PBXNativeTarget "NHLStatTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB04A42206457CC000B3074 /* Debug */,
+				DFB04A43206457CC000B3074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB04A44206457CC000B3074 /* Build configuration list for PBXNativeTarget "NHLStatTrackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB04A45206457CC000B3074 /* Debug */,
+				DFB04A46206457CC000B3074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB04A47206457CC000B3074 /* Build configuration list for PBXNativeTarget "NHLStatTrackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB04A48206457CC000B3074 /* Debug */,
+				DFB04A49206457CC000B3074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFB04A11206457CC000B3074 /* Project object */;
+}
