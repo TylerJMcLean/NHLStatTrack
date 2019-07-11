@@ -62,10 +62,12 @@ class ScheduleController: UITableViewController {
         super.applicationFinishedRestoringState()
     }
     
+    //Force the table to have a certain amount of cells
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return games.count
     }
     
+    //For each cell in the table, create the game
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "UpcomingCell", for: indexPath) as! UpcomingViewCell
         

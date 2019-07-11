@@ -10,18 +10,23 @@ class APIGlue {
     func getStandings() -> Array<Array<Team>>! {
         let stache = Stash().getInstance()
         var standings = Array<Array<Team>>()
+        
+        //Break the standings into multiple conferences
         standings.append(Array<Team>())
         standings.append(Array<Team>())
         standings.append(Array<Team>())
         standings.append(Array<Team>())
         
+        //Get standings information from the API
         let pullData = stache.pullFromStash(url: "https://statsapi.web.nhl.com/api/v1/standings")
         let parser = JsonParser()
         
+        //Parse data into a JSON Object
         let json = parser.parseJson(toParse: pullData)
         
         let standingBase = json["records"] as! Array<AnyObject>
         
+        //Break each division apart and create proper records
         for division in standingBase {
             let record = division["teamRecords"] as! Array<AnyObject>
             for teams in record {
@@ -48,6 +53,7 @@ class APIGlue {
     public func getTeam(from id:Int) -> Team! {
         let stache = Stash().getInstance()
         
+        //Get team specific stats from the API
         let pullData = stache.pullFromStash(url: "https://statsapi.web.nhl.com/api/v1/teams/\(id)?expand=team.stats")
         let parser = JsonParser()
         
@@ -64,6 +70,7 @@ class APIGlue {
         let stache = Stash().getInstance()
         var players = Array<Player>()
         
+        //Pull all active roster player data from the API
         let pullData = stache.pullFromStash(url: "http://statsapi.web.nhl.com/api/v1/teams/\(teamId)?hydrate=roster(person(stats(splits=statsSingleSeason)))")
         let parser = JsonParser()
         
@@ -71,6 +78,7 @@ class APIGlue {
         
         let rosterBase = (((((json["teams"] as! Array<AnyObject>)[0]["roster"]) as! Dictionary<String, AnyObject>)["roster"]) as! Array<AnyObject>)
         
+        //Populate player data
         for player in rosterBase {
             var newPlayer:Player
             var playerBase = player["person"] as! Dictionary<String, AnyObject>
@@ -83,6 +91,7 @@ class APIGlue {
                 hasStats = false
             }
             
+            //Special information is required for goalies
             if (playerBase["primaryPosition"]!["code"] as! String != "G") {
                 if (hasStats) {
                     newPlayer = Player(name: playerBase["fullName"] as! String, gp: statBase["games"] as! Int, goals: statBase["goals"] as! Int, assists: statBase["assists"] as! Int, points: statBase["points"] as! Int, plusMinus: statBase["plusMinus"] as! Int, pim: statBase["pim"] as! Int)
@@ -116,6 +125,7 @@ class APIGlue {
         let currDateString = formatter.string(from: currDate)
         let futureDateString = formatter.string(from: futureDate)
         
+        //Pull list of games within the next week
         let pullData = stache.pullFromStash(url: "https://statsapi.web.nhl.com/api/v1/schedule?startDate=\(currDateString)&endDate=\(futureDateString)&expand=schedule.teams")
         let parser = JsonParser()
         
@@ -123,12 +133,13 @@ class APIGlue {
         
         let dateBase = json["dates"] as! Array<AnyObject>
         
+        //Get each date and figure out who's playing, at what time, in your local timezone
         for date in dateBase {
             let games = date["games"] as! Array<AnyObject>
             
             for game in games {
                 let gameDict = game as! Dictionary<String, AnyObject>
-                var newGame = Game(home: (((gameDict["teams"] as! Dictionary<String, AnyObject>)["home"] as! Dictionary<String, AnyObject>)["team"] as! Dictionary<String, AnyObject>)["name"] as! String, away: (((gameDict["teams"] as! Dictionary<String, AnyObject>)["away"] as! Dictionary<String, AnyObject>)["team"] as! Dictionary<String, AnyObject>)["name"] as! String, time: LocalTime().toLocal(time: gameDict["gameDate"] as! String))
+                let newGame = Game(home: (((gameDict["teams"] as! Dictionary<String, AnyObject>)["home"] as! Dictionary<String, AnyObject>)["team"] as! Dictionary<String, AnyObject>)["name"] as! String, away: (((gameDict["teams"] as! Dictionary<String, AnyObject>)["away"] as! Dictionary<String, AnyObject>)["team"] as! Dictionary<String, AnyObject>)["name"] as! String, time: LocalTime().toLocal(time: gameDict["gameDate"] as! String))
                 
                 gamesList.append(newGame)
                 

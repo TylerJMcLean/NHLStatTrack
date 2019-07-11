@@ -6,6 +6,7 @@
 //  Copyright © 2018 UofG Students. All rights reserved.
 //
 
+/* Game struct to make dealing with game objects easier */
 struct Game {
     let home:String
     let away:String

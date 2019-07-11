@@ -70,6 +70,7 @@ class StandingController: UITableViewController {
         
     }
     
+    //Force a set amount of rows per section
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
@@ -85,10 +86,12 @@ class StandingController: UITableViewController {
         }
     }
     
+    //Force a set amount of sections
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 4
     }
     
+    //Put the teams in the rows with their stats
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: CellID.TeamViewCell, for: indexPath) as! TeamViewCell
         if (indexPath.row < teams[indexPath.section].count) {
@@ -97,6 +100,8 @@ class StandingController: UITableViewController {
         return cell
     }
     
+    /*Create section names with set length strings.
+      This does not translate well outside of a set screen size though */
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:

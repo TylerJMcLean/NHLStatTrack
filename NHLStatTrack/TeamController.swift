@@ -70,6 +70,9 @@ class TeamController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        /* Create transitions to team information.
+           Give information to the new view via custom segues
+           IDs were grabbed by trial and error */
         if (segue.identifier == "anaheim") {
             let controller = segue.destination as! TeamStatController
             controller.teamName = "Ducks"

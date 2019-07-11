@@ -14,6 +14,7 @@ class LiveController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //Create the standard template view GUI
         createMenus()
         customizeBar()
         
@@ -26,6 +27,7 @@ class LiveController: UIViewController {
     }
     
     func createMenus() {
+        //Set up toggleable menu
         if revealViewController() != nil {
             menuButton.target =     revealViewController()
             menuButton.action = #selector    (SWRevealViewController.revealToggle(_:))
